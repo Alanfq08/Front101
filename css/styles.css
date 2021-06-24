@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.root{
+    --primaryColor: #2196f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.blackIcon{
+    filter: invert(1);
+}
+
+section{
+    padding: 100px;
+}
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background-blend-mode: darken;
+    background: url('https://fondosmil.com/fondo/54336.png'), #00000023;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textBox{
+    color: white;
+}
+
+.banner h2{
+    font-size: 3em;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 2.0;
+    text-shadow: 2.5px 2.5px 15px #000000;
+}
+
+.banner h2 span{
+    font-size: 1.5m;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.banner h3{
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 1.5px 2.5px 5px #000000;
+}
+
+.btn{
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header .logo{
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1.5px 1.25px 2.5px #000000;
+}
+
+header.sticky{
+    background: white;
+    padding: 20px 100px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+header.sticky ul li a{
+    color: black;
+}
+
+header.sticky .logo{
+    color: black;
+
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(27, 27, 27);
+}
+
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBox h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.w50{
+    min-width: 50%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .servicesBox{
+    padding: 40px 20px;
+    background: #222;
+    color: white;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.services .content .servicesBox{
+    padding: 40px 20px;
+    background: #222;
+    color: white;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.services .content .servicesBox:hover{
+    background: var(--primaryColor);
+}
+
+.services .content .servicesBox img{
+    max-width: 100px;
+    filter: invert();
+}
+
+.services .content .servicesBox h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.services {
+    background: #111;
+}
+
+.white{
+    color: white;
+
+}
+
+.work .content{
+    flex-wrap: wrap;
+}
+
+.work .content .workBox{
+    width: 50%;
+    padding: 20px;
+}
+
+.certifications{
+    background: #f0f0f0;
+}
+
+.certifications .content{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.certifications .content .certificationsBox{
+    max-width: calc(50%-40%);
+    padding: 60px 40px;
+    margin: 20px;
+    background: #2196f3;
+}
+
+.certifications .content .certificationsBox p{
+    color: white;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.certifications .content .certificationsBox a{
+    color: white;
+}
+
+.certifications .content .certificationsBox h3{
+    color: white;
+    margin-top: 40px;
+    text-align: end;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.certifications .content .certificationsBox h3 span{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.centerBox{
+    display: flex;
+    justify-content: center;
+}
+
+.certificationLogo{
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.contact{
+    background: #111;
+}
+
+.contact .content{
+    justify-content: space-between;
+}
+
+.formBox{
+    min-width: 60%;
+}
+
+.formBox form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.formBox form h3,
+.contactInfo h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formBox form input,
+.formBox form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+
+.formBox form textarea{
+    min-height: 200px;
+}
+
+.formBox form input::placeholder,
+.formBox form textarea::placeholder{
+    color: #999;
+}
+
+.formBox form input[type="submit"],
+.formBox form input[type="reset"]{
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 5px;
+    max-width: 150px;
+    border-radius: 5px;
+    background: #008cff;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.formBox form input[type="reset"]{
+    background: #ff0062;
+}
+
+.contactInfo{
+    position: relative;   
+}
+
+.contactInfo .box{
+    position: relative;
+    padding: 20px;
+    display: flex;
+}
+
+.contactInfo .box .icon{
+    min-width: 40px;
+    color: #fff;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInfo .box .text{
+    color: #fff;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.copyright{
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+.copyright p{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.socialIcon a{
+    text-decoration: none;
+}
+
+
+.socialIcon i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background: #495057;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    color: white;
+}
+
+.socialIcon i:hover{
+    background: red;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+/*Responsive*/
+@media screen and (max-width:991px){
+    header,
+    header.sticky{
+        padding: 20px 50px;
+    }
+
+    .menu{
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        transition: 0.5s;
+        z-index: 1;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .menu.activate{
+        left: 0;
+    }
+
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url('../assets/images/menu.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.activate{
+        background: url('../assets/images/close.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    header ul li a{
+        color: black;
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    section{
+        padding: 25px auto;
+    }
+
+    .banner{
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2{
+        font-size: 2em;
+    }
+
+    .banner h2 span{
+        font-size: 2em;
+    }
+
+    .banner h3{
+        font-size: 1.2em;
+    }
+
+    .btn{
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .heading h2{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .contentBox h3{
+        font-size: 20px;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .work .content{
+        flex-direction: row;
+    }
+
+    p{
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+
+    .work .content .workBox{
+        width: 50%;
+        padding: 10px;
+    }
+
+    .certifications .content .certificationsBox{
+        max-width: calc(100%-20px);
+        padding: 40px 20px;
+        
+    }
+
+    .certifications .content .certificationsBox h3{
+        margin-top: 20px;
+    }
+
+    .contactInfo{
+        min-width: 40%;
+        margin: 20px auto;
+    }
+
+    .contentBox{
+        padding-right: 0;
+    }
+
+    .copyright p{
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section{
+        padding: 40%;
+    }
+
+    .img{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .work .content .workBox{
+        width: 100%;
+        padding: 10px;
+    }
+    
+}
